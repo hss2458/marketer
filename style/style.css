@@ -368,6 +368,7 @@ header .main-header .container {
   .news .title h1 {
     color: #2f362f; }
   .news .title p {
+    width: 300px;
     color: #7b7b7b;
     font-size: 16px; }
   .news .box-list {
@@ -453,5 +454,68 @@ header .main-header .container {
     .news .slide-btn a {
       color: #e0e0e0;
       padding: 0 5px; }
+
+.team {
+  padding: 90px 0;
+  background: #393f43; }
+  .team .title h1 {
+    color: #ddd; }
+  .team .title p {
+    color: #ddd; }
+  .team .box {
+    display: flex; }
+    .team .box .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      width: 370px; }
+      .team .box .item img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        border: 6px solid #ddd; }
+      .team .box .item .sub-title {
+        position: relative; }
+        .team .box .item .sub-title h3 {
+          padding: 20px 0 0;
+          color: #ddd; }
+        .team .box .item .sub-title p {
+          padding: 0 0 30px;
+          text-align: center;
+          font-size: 15px;
+          font-style: italic;
+          color: #ddd; }
+        .team .box .item .sub-title::before {
+          content: "";
+          position: absolute;
+          top: 77px;
+          left: 50%;
+          width: 50px;
+          transform: translateX(-50%);
+          border: 2px solid #3498db; }
+      .team .box .item .txt {
+        text-align: center;
+        color: #ddd;
+        padding: 0 10px 20px; }
+        .team .box .item .txt p {
+          width: 300px; }
+      .team .box .item .sns-links a {
+        display: inline-block;
+        text-align: center;
+        line-height: 34px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #4099ff; }
+        .team .box .item .sns-links a i {
+          font-size: 20px;
+          color: #fff; }
+        .team .box .item .sns-links a:nth-child(2) {
+          background: #c92228; }
+        .team .box .item .sns-links a:nth-child(3) {
+          background: #3b5998; }
+        .team .box .item .sns-links a:nth-child(4) {
+          background: #ea4c89; }
 
 /*# sourceMappingURL=style.css.map */

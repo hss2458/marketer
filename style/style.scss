@@ -576,6 +576,7 @@ header {
     }
 
     p {
+      width: 300px;
       color: #7b7b7b;
       font-size: 16px;
     }
@@ -721,6 +722,100 @@ header {
     a {
       color: #e0e0e0;
       padding: 0 5px;
+    }
+  }
+}
+
+.team {
+  padding: 90px 0;
+  background: #393f43;
+
+  .title {
+    h1 {
+      color: #ddd;
+    }
+    p {
+      color: #ddd;
+    }
+  }
+
+  .box {
+    display: flex;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      width: 370px;
+
+      img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        border: 6px solid #ddd;
+      }
+
+      .sub-title {
+        position: relative;
+        h3 {
+          padding: 20px 0 0;
+          color: #ddd;
+        }
+        p {
+          padding: 0 0 30px;
+          text-align: center;
+          font-size: 15px;
+          font-style: italic;
+          color: #ddd;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 77px;
+            left: 50%;
+            width: 50px;
+            transform: translateX(-50%);
+            border: 2px solid #3498db;
+        }
+      }
+
+      .txt {
+        text-align: center;
+        color: #ddd;
+        padding: 0 10px 20px;
+        p {
+          width: 300px;
+        }
+      }
+
+      .sns-links {
+        a {
+          display: inline-block;
+          text-align: center;
+          line-height: 34px;
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+          background: #4099ff;
+
+          i {
+            font-size: 20px;
+            color: #fff;
+          }
+
+          &:nth-child(2) {
+            background: #c92228;
+          }
+          &:nth-child(3) {
+            background: #3b5998;
+          }
+          &:nth-child(4) {
+            background: #ea4c89;
+          }
+        }
+      }
     }
   }
 }
